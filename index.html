@@ -1,0 +1,110 @@
+<DOCTYPE html>
+  <html lang="id">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>QuizKu</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <main id="container">
+        <div class="start_container">
+          <div class="start_btn"><button>Mulai Quiz</button></div>
+          <div class="leaderboard"><button>Peringkat</button></div>
+        </div>
+
+        <div class="name_box">
+          <input type="text" class="name" placeholder="Siapa namamu?" />
+          <input type="button" class="name_btn" value="Oke! ayo kita Mulai" />
+        </div>
+
+        <div class="instructions">
+          <div class="info_title">
+            <span>Aturan dalam Quiz ini</span>
+          </div>
+          <div class="info_list">
+            <div class="info">
+              1. kamu hanya punya waktu <span>15 detik</span> per setiap
+              pertanyaan.
+            </div>
+            <div class="info">
+              2. Setelah Anda memilih jawaban Anda, Anda tidak dapat memilih
+              ulang.
+            </div>
+            <div class="info">
+              3. Anda tidak dapat memilih opsi apa pun setelah waktu habis
+            </div>
+            <div class="info">
+              4. Anda tidak dapat keluar dari Kuis saat Anda bermain.
+            </div>
+            <div class="info">
+              5. Setelah Anda selesai Klik "Kirim Skor" agar masuk ke
+              leadeboard.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="quit">Nyerah</button>
+            <button class="restart">Lanjut</button>
+          </div>
+        </div>
+        <div class="math-quiz">
+          <header>
+            <div class="title">Quiz Matematika</div>
+            <div class="timer">
+              <div class="time_text">Sisa Waktu</div>
+              <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+          </header>
+          <section>
+            <div>
+              <span id="questions"
+                ><p id="num1"></p>
+                X
+                <p id="num2"></p
+              ></span>
+            </div>
+            <div class="option_list">
+              <div class="option" id="option1"></div>
+              <div class="option" id="option2"></div>
+              <div class="option" id="option3"></div>
+              <div class="option" id="option4"></div>
+            </div>
+          </section>
+          <footer>
+            <div class="points">
+              <div class="point_text">Skor kamu</div>
+              <div class="point_no">0</div>
+            </div>
+            <button class="next_btn">Tampilkan Hasilnya</button>
+          </footer>
+        </div>
+        <div class="result_box">
+          <div>
+            Skor Tertinggi:
+            <p>2053 Poin</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">
+            Selamat! kamu berhasil menyelesaikan Quiz
+          </div>
+          <div class="score_text"></div>
+          <div class="buttons">
+            <button class="restart">Kirim Skor Saya</button>
+            <button class="quit">Main Lagi</button>
+          </div>
+        </div>
+      </main>
+      <a
+        id="leaderboard_link"
+        href="https://drive.google.com/file/d/1m0WULlae5pYoBCkdNt1zS-QC65aSoot_/view?usp=sharing"
+        target="_blank"
+      ></a>
+      <a id="link" target="_blank"></a>
+    </body>
+
+    <script type="text/javascript" src="index.js"></script>
+  </html>
+</DOCTYPE>
